@@ -19,6 +19,7 @@
                             <h1>{{ trip.destination }}</h1>
                             <h4>{{ trip.profile_set.count|add:1}} attending</h4>
                             <h5>Host: {{ trip.host }}</h5>
+                            <p>Date: {{trip.trip_date}}</p>
                             <!-- View Details -->
                             <a href="{% url 'trip:detail' trip.id %}" class="btn btn-primary btn-sm" role="button">Details</a>
 
